@@ -23,7 +23,7 @@ repo_counter=0 # Number of found repos.
 
 echo "";
 
-for d in "$directory_to_search"/* # For every directory in Documents,
+for d in "$directory_to_search"/* # For every directory at the top level of the given directory,
 do
    if [[ -d "$d/.git" ]]; then # If it has a .git directory inside
    
